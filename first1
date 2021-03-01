@@ -20,9 +20,9 @@ int recursivebinarysearch(int A[], int low, int high, int key, int& it1, int& co
     }
 }
  
-int binarysearch(int A[12], int key, int& it2, int& com2)
+int binarysearch(int A[13], int key, int& it2, int& com2)
 {
-    int mid, high = 11, low = 0;
+    int mid, high = 12, low = 0;
     do
     {   
         it2++;
@@ -43,10 +43,10 @@ int binarysearch(int A[12], int key, int& it2, int& com2)
     
 }
 
-int linearsearch(int A[12], int key, int& it3)
+int linearsearch(int A[13], int key, int& it3)
 {
     int index = -1;
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < 13; i++)
     {
         it3++;
         if (A[i] == key)
@@ -58,11 +58,11 @@ int linearsearch(int A[12], int key, int& it3)
 
 int main()
 {
-    int A[12] = { -58, -34, -32, -32, -27, -25, -21, -13, 74, 79, 89, 102 };
-    int key, high = 11, low = 0;
+    int A[12] = { -58, -34, -32, -32, -27, -25, -21, -13, 74, 79, 89, 102, 166 };
+    int key, high = 12, low = 0;
     int it1 = 0, com1 = 0, it2 = 0, com2 = 0, it3 = 0;
     cout << "The array:" << endl;
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < 13; i++)
         cout << A[i] << " ";
     cout << endl;
     cout << "Enter the number for search:" << endl;
